@@ -1,3 +1,9 @@
+$bg: rgb(7, 61, 7);
+$primary: aqua;
+$secondary: rgb(118, 199, 226);
+@import "bootstrap/scss/bootstrap";
+
 body {
-   background-color: red;
+   font-family: Arial;
+   background-color: $bg;
 }
