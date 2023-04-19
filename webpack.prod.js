@@ -4,6 +4,11 @@ const path = require("path");
 module.exports = {
    mode: "production",
    entry: "./src/index.js",
+   output: {
+      path: path.resolve(__dirname, "dist"),
+      filename: "main.[contenthash].js",
+      clean: true,
+   },
    plugins: [
       new HtmlWebpackPlugin({
          template: "./src/template.html",
